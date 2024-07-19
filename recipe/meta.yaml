@@ -1,6 +1,5 @@
 {% set version = '0.0.1' %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-bstats
@@ -12,8 +11,7 @@ source:
   sha256: f6ac45e0b9a95a828a922c7c50152550901d26c83d7b01f5f6353e230e7ef585
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  number: 3
   noarch: generic
   rpaths:
     - lib/R/lib/
